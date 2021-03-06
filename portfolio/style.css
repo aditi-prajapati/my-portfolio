@@ -1,0 +1,74 @@
+.btn:hover{
+    background-color: aqua;
+    transition: 2s ease;
+    }
+    .portfolio{
+        background-color: black;
+        height: 90vh;
+    }
+    .image{
+            background-repeat: no-repeat;
+            float: right;
+            padding: 10vh 20vh;
+    }
+    .image img{
+        height: 60vh;
+    }
+    .contactus{
+        background-color: darkcyan;
+    }
+    
+    #heading1{
+        color: white;
+        align-items: center;
+        margin-left: 41%;
+    }
+    hr{
+        border: 2px solid white;
+        border-width: 2px;
+    }
+    .btn1{
+        margin: 0 35%;
+        padding: 10px 40px;
+        border-radius: 20px;
+    }
+    .btn1:hover{
+        background-color: black;
+        color: white;
+    }
+    span{
+        color: rgb(187, 180, 180);
+    }
+
+    /* this is about css */
+    
+    .hd{
+        position: relative;
+        font-size: 5rem;
+        color: black;
+        -webkit-text-stroke: 0.1vw rgb(136, 118, 118);
+        text-transform: uppercase;
+        width: 76vh;
+    }
+    .hd::before{
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        color: aqua;
+        -webkit-text-stroke: 0vw rgb(136, 118, 118) ;
+        border-right: 3px solid transparent;
+        overflow: hidden;
+        animation: animate 8s linear infinite;
+    }
+    @keyframes animate{
+        0%, 10%, 100%{
+            width: 0;
+        }
+        70%, 90%{
+            width: 100%;
+        }
+    }
+    
